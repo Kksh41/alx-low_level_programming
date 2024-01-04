@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio.h> // Include the necessary header file
 
 /**
  * puts2 - Prints every other character from the string, starting with the first.
@@ -26,8 +26,9 @@ void puts2(char *str)
     for (o = 0; o <= t; o++)
     {
         if (o % 2 == 0)
-            _putchar(str[o]);
+            putchar(str[o]); // Changed _putchar to putchar
     }
-    _putchar('\n');
+    putchar('\n'); // Changed _putchar to putchar
 }
+
 
